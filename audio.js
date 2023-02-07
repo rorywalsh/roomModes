@@ -61,7 +61,7 @@ const addRoomModes = function (data) {
     let instr = `
     instr 2
     aIn diskin2 "${data.sample}", 1, 0, 0
-    p3 = filelen("${data.sample}")\n`;
+    p3 = filelen("${data.sample}")+4\n`;
 
     for (let i = 0; i < data.axial.length; i++) {
         instr += 'aAx' + i + ' mode aIn, ' + data.axial[i] + ', 10\n';
