@@ -19,7 +19,7 @@ const initScene = async function () {
         scene.activeCamera = camera;
         newMeshes[0].scaling = new BABYLON.Vector3(2.8, 2.8, 2.8);
         newMeshes[0].position.y = -350;
-        newMeshes[0].position.z = -2000;
+        newMeshes[0].position.z = -1600;
         camera.rotation.y = 3.14;
 
         setTimeout(function () {
@@ -37,6 +37,7 @@ const initScene = async function () {
         console.log(kbInfo.event.keyCode);
         if (kbInfo.type === BABYLON.KeyboardEventTypes.KEYDOWN) {
             if (csound) {
+                //if number 1 key is pressed
                 if (kbInfo.event.keyCode == 49) {
                     resumeAudio();
                     //add modes for the room
@@ -48,6 +49,7 @@ const initScene = async function () {
                         oblique: [100]
                     });
                 }
+                //if number 2 key is pressed
                 else if (kbInfo.event.keyCode == 50) {
                     resumeAudio();
                     //add modes for the room
