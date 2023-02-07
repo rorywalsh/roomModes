@@ -3,7 +3,7 @@ Code:
 
 Audio: 
 * Anybody Here by alphahog Freesound ID 46364 CC
-*awh.wav CC
+* awh.wav CC
 
 
 Model Information:
